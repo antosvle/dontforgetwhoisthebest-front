@@ -1,0 +1,2 @@
+# dontforgetwhoisthebest-front
+Dontforgetwhoisthebest (ou DFWITB) est l'application idéal pour prouver ta supériorité face à ton entourage sur Super Smash Bros. Tu souhaites prouver, humilier, enregistrer, partager à partir de tes résultats en combat ? Tu es sur le bon Readme. Dontforgetwhoisthebest te propose un outils permettant d'enregistrer tes performances à partir de toutes les informations du combat vers un leaderboard débordant de fonctionnalité.

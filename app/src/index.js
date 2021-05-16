@@ -15,7 +15,7 @@ const App = () => {
 
             <div id={"app"}>
                 <Route render={({ location}) =>
-                    <PageTransition preset="scaleDownFromTop" transitionKey={location.pathname}>
+                    <PageTransition preset="moveToBottomFromTop" transitionKey={location.pathname}>
                         <Switch location={location}>
                             {routes.map((route, index) =>
                                 <Route

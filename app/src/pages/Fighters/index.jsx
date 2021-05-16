@@ -1,13 +1,12 @@
 import React from "react"
-import nintendo_loader from "../../res/animations/nintendo.gif"
+import classes from "./style.module.scss"
 
 
 const Fighters = () => {
 
     return(
-        <div>
+        <div className={classes.fighters}>
             Fighters
-            <img src={nintendo_loader} alt={"Nintendo animations"}/>
         </div>
     )
 }

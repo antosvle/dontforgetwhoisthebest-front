@@ -1,6 +1,6 @@
 import React from "react"
 import classes from "./style.module.scss"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import nintendoLogo from "../../res/images/nintendo.png"
 
 
@@ -18,10 +18,10 @@ const Header = () => {
             </div>
 
             <nav className={classes.navbar}>
-                <Link to={"/"} >Accueil</Link>
-                <Link to={"/leaderboard"} >Leaderboard</Link>
-                <Link to={"/fighters"} >Fighters</Link>
-                <Link to={"/stages"} >Stages</Link>
+                <NavLink exact to={"/"} activeClassName={classes.selected}>Accueil</NavLink>
+                <NavLink exact to={"/leaderboard"} activeClassName={classes.selected}>Leaderboard</NavLink>
+                <NavLink exact to={"/fighters"} activeClassName={classes.selected}>Fighters</NavLink>
+                <NavLink exact to={"/stages"} activeClassName={classes.selected}>Stages</NavLink>
             </nav>
         </header>
     )

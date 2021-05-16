@@ -1,10 +1,11 @@
 import React from "react"
+import classes from "./style.module.scss"
 
 
 const LeaderBoard = () => {
 
     return(
-        <div>
+        <div className={classes.leaderboard}>
             Leaderboard
         </div>
     )

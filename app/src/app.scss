@@ -9,7 +9,7 @@ body {
   margin: 0;
   color: $black;
   font-family: "Roboto", sans-serif;
-  background-color: $black;
+  background-color: $white;
 }
 
 * {
@@ -17,7 +17,24 @@ body {
 }
 
 #root {
+  width: 100%;
   height: 100%;
+}
+
+#loading{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms;
+  background-color: $white;
+  z-index: 2000;
+  top: 0;
+  left: 0;
 }
 
 #app{

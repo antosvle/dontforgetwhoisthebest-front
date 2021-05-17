@@ -3,6 +3,12 @@ import axios from "axios";
 
 export let fighters = []
 
+
+export const setFighters = (refresh_fighters) => {
+    fighters = [... refresh_fighters]
+}
+
+
 export const getFightersFromApi = () => {
 
     return new Promise((resolve) => {

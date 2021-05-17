@@ -6,6 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import axios from "axios";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckSquare} from "@fortawesome/free-regular-svg-icons";
+import {setFighters} from "../../providers/fighters";
 
 
 const Update = (props) => {
@@ -25,6 +26,7 @@ const Update = (props) => {
 
         axios.get(backend_url + "/scraper/refresh/fighters")
             .then((res) => {
+                setFighters(res.data)
                 setUpdate(true)
                 setTimeout(() => props.handleClose(), 1500)
             })

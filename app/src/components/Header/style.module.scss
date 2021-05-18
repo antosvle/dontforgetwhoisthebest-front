@@ -78,3 +78,14 @@
     }
   }
 }
+
+
+@media (max-width: 600px) {
+  .top {
+    justify-content: center !important;
+
+    p{
+      display: none;
+    }
+  }
+}

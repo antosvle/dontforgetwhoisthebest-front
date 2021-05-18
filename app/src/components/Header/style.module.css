@@ -67,4 +67,13 @@
   border-bottom: 1px solid #2E282A;
 }
 
+@media (max-width: 600px) {
+  .top {
+    justify-content: center !important;
+  }
+  .top p {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */

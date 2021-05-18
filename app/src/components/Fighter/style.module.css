@@ -47,4 +47,20 @@
   width: 100%;
 }
 
+@media (max-width: 1400px) {
+  .fighter {
+    width: calc(33% - 40px);
+  }
+}
+@media (max-width: 1000px) {
+  .fighter {
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 600px) {
+  .fighter {
+    width: calc(100% - 40px);
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */

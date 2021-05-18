@@ -30,7 +30,10 @@ const Update = (props) => {
                 setUpdate(true)
                 setTimeout(() => props.handleClose(), 1500)
             })
-            .catch((err) => console.error(err))
+            .catch((err) => {
+                setTimeout(() => props.handleClose(), 1500)
+                console.error(err)
+            })
     }
 
 

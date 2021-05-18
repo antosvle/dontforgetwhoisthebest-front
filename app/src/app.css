@@ -8,6 +8,7 @@ body {
   color: #050505;
   font-family: "Roboto", sans-serif;
   background-color: #FFF;
+  overflow-x: hidden;
 }
 
 * {

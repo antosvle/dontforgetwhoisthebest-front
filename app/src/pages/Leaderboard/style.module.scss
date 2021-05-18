@@ -12,7 +12,7 @@
     background-color: $gray;
     align-items: center;
     flex-direction: column;
-    padding: 60px 60px;
+    padding: 60px;
 
     table{
       border-collapse: collapse;
@@ -46,6 +46,7 @@
         background-color: $red;
         background-size: auto 100%;
         background-position: right;
+        background-repeat: no-repeat;
         transition: all 300ms;
         border: 5px solid rgba(0, 0, 0, 0);
 
@@ -74,6 +75,34 @@
       .date{
         font-family: "Roboto", sans-serif;
         font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .container{
+    padding: 30px !important;
+
+    table{
+      width: 100% !important;
+
+      th, td{
+        padding: 2px !important;
+      }
+
+      .card{
+        width: 100% !important;
+        height: 60px !important;
+        span{
+          font-size: 14px !important;
+        }
+      }
+
+      .date{
+        font-size: 12px !important;
       }
     }
   }

@@ -89,3 +89,14 @@
     }
   }
 }
+
+
+
+@media (max-width: 450px) {
+  .navbar {
+    a{
+      font-size: 12px !important;
+      margin: 4px 15px 0 15px !important;
+    }
+  }
+}

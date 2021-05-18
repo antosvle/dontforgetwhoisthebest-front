@@ -143,3 +143,16 @@
     }
   }
 }
+
+
+@media (max-width: 450px) {
+  .player{
+    h2{
+    }
+
+    &:hover{
+      width: 350px !important;
+      height: 160px !important;
+    }
+  }
+}

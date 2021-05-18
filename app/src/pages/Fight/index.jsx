@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom';
 import {addScore, postScores} from "../../providers/scores";
 import {players} from "../../providers/players";
 import Update from "../../components/Update";
+import Title from "../../components/Title";
 
 
 const Fight = () => {
@@ -65,7 +66,7 @@ const Fight = () => {
         return (
             <div className={classes.fight}>
                 <div className={classes.container}>
-                    <h1>{(savePlayer.length === 0)? "JOUEUR 1" : "JOUEUR 2"}</h1>
+                    <Title text={(savePlayer.length === 0)? "JOUEUR 1" : "JOUEUR 2"}/>
                     <label>
                         <span className={classes.title}>- Pseudo -</span>
                         <div className={classes.wrapper}>
@@ -117,7 +118,7 @@ const Fight = () => {
         return (
             <div className={classes.fight}>
                 <div className={classes.container}>
-                    <h1>SELECTIONNER LE VAINQUEUR</h1>
+                    <Title text={"SELECTIONNER LE VAINQUEUR"}/>
                     <div className={classes.versus}>
                         <div className={classes.player} onClick={() => registerResult(0)}
                              style={{backgroundImage: "url('" + savePlayer[0].fighter.img +  "')"}}>

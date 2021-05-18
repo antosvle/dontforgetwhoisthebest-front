@@ -126,4 +126,11 @@
   letter-spacing: 2px;
 }
 
+@media (max-width: 450px) {
+  .player:hover {
+    width: 350px !important;
+    height: 160px !important;
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */

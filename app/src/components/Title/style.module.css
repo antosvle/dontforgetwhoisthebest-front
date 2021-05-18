@@ -9,4 +9,11 @@
   padding: 10px 20px;
 }
 
+@media (max-width: 750px) {
+  .title {
+    min-width: auto;
+    font-size: 25px !important;
+  }
+}
+
 /*# sourceMappingURL=style.module.css.map */

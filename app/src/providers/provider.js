@@ -1,4 +1,6 @@
 import {getFightersFromApi} from "./fighters";
+import {getPlayersFromApi} from "./players";
+import {getScoresFromApi} from "./scores";
 
 
 export const loadData = () => {
@@ -6,7 +8,9 @@ export const loadData = () => {
     return new Promise((launch) => {
 
         Promise.all([
-            getFightersFromApi()
+            getFightersFromApi(),
+            getPlayersFromApi(),
+            getScoresFromApi()
         ])
             .then((resolves) => {
                 const validator = []

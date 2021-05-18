@@ -1,6 +1,6 @@
 import React from "react"
 import classes from "./style.module.scss"
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import nintendoLogo from "../../res/images/nintendo.png"
 
 
@@ -11,7 +11,7 @@ const Header = () => {
             <div className={classes.top}>
                 <div>
                     <img src={nintendoLogo} alt={"Nintendo logo"}/>
-                    <h1>DFWITB</h1>
+                    <Link to={"/"}><h1>DFWITB</h1></Link>
                 </div>
 
                 <p>Leaderboard Smash Bros par <span>Antoine Savalle</span></p>

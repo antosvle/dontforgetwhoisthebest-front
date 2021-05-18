@@ -1,0 +1,70 @@
+.leaderboard {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.leaderboard .container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  background-color: #F3F3F3;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 60px;
+}
+.leaderboard .container table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.leaderboard .container table thead {
+  height: 60px;
+  color: #2E282A;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+.leaderboard .container table thead .winner {
+  color: white;
+  background-color: #FF4237;
+}
+.leaderboard .container table th {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.leaderboard .container table th, .leaderboard .container table td {
+  width: 33%;
+  padding: 10px;
+}
+.leaderboard .container table .card {
+  width: 350px;
+  height: 120px;
+  background-color: #FF4237;
+  background-size: auto 100%;
+  background-position: right;
+  transition: all 300ms;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+.leaderboard .container table .card span {
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  color: #F3F3F3;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.leaderboard .container table .card.looser {
+  background-color: white !important;
+}
+.leaderboard .container table .date {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.module.css.map */

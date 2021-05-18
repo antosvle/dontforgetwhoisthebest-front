@@ -7,12 +7,21 @@ const Fighters = () => {
 
     return(
         <div className={classes.fighters}>
-            {fighters.length}
-            {fighters.sort().map((fighter) =>
-                <div>
-                    {fighter.name}
-                </div>
-            )}
+            <div className={classes.container}>
+
+                {fighters.sort((a, b) => a.name.localeCompare(b.name)).map((fighter, index) =>
+                    <a key={index} target="_blank" rel="noopener noreferrer" href={fighter.page}
+                       className={classes.fighter}>
+
+                        <div className={classes.layer} style={{backgroundImage: "url('" + fighter.img + "')"}}>
+                            <span>
+                                {fighter.name}
+                            </span>
+                        </div>
+                    </a>
+                )}
+
+            </div>
         </div>
     )
 }

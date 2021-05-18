@@ -77,6 +77,17 @@
         font-size: 20px;
       }
     }
+
+    .stats {
+      width: 900px;
+      margin-bottom: 60px;
+
+      th, td{
+        width: 25%;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,0.3);
+      }
+    }
   }
 }
 
@@ -103,6 +114,19 @@
 
       .date{
         font-size: 12px !important;
+      }
+    }
+
+
+    .stats{
+      width: 100% !important;
+
+      .optional{
+        display: none;
+      }
+
+      th, td{
+        padding: 10px !important;
       }
     }
   }

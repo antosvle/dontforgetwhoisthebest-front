@@ -5,7 +5,7 @@ export let players = []
 
 
 export const setPlayers = (refresh_players) => {
-    players = [... refresh_players]
+    players = [...refresh_players]
 }
 
 

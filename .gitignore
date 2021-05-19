@@ -4,6 +4,10 @@
 app/node_modules/
 node_modules/
 
+# css and css.map
+*.css
+*.map
+
 # production
 /app/build
 
